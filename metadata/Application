@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "views": [
-            "MyTabPanel"
+            "Main"
         ],
         "name": "BucketList"
     },

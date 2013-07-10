@@ -6,7 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "MyTabPanel",
+        "designer|userClassName": "Main",
+        "designer|userAlias": "main",
         "designer|initialView": true
     },
     "designerId": "39dc1408-4d40-46fe-9ed4-2727000bc966",
@@ -19,7 +20,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Tab 1"
+                "title": "My Items",
+                "iconCls": "star"
             },
             "designerId": "26dfb71d-7e68-4c4c-83ba-72b4af885fec"
         },
@@ -31,7 +33,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Tab 2"
+                "title": "Categories",
+                "iconCls": "organize"
             },
             "designerId": "dba1b951-2607-46c6-865c-43443bef6a76"
         },
@@ -43,9 +46,35 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Tab 3"
+                "title": "Login",
+                "iconCls": "user"
             },
             "designerId": "686660f8-575a-43d7-8585-b62c20885db9"
+        },
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "My Bucket List"
+            },
+            "designerId": "ae4fea52-2f8f-436f-a08e-f704a59f6952"
+        },
+        {
+            "type": "Ext.tab.Bar",
+            "reference": {
+                "name": "tabBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom"
+            },
+            "designerId": "266f59ca-fb51-48f1-b925-ba5c6361981f"
         }
     ]
 }

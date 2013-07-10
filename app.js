@@ -20,13 +20,13 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MyTabPanel'
+        'Main'
     ],
     name: 'BucketList',
 
     launch: function() {
 
-        Ext.create('BucketList.view.MyTabPanel', {fullscreen: true});
+        Ext.create('BucketList.view.Main', {fullscreen: true});
     }
 
 });

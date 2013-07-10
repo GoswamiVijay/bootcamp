@@ -23,11 +23,11 @@
         },
         "39dc1408-4d40-46fe-9ed4-2727000bc966": {
             "paths": [
-                "metadata/view/MyTabPanel",
-                "app/view/override/MyTabPanel.js",
-                "app/view/MyTabPanel.js"
+                "metadata/view/Main",
+                "app/view/override/Main.js",
+                "app/view/Main.js"
             ],
-            "className": "MyTabPanel"
+            "className": "Main"
         }
     },
     "viewOrderMap": {
