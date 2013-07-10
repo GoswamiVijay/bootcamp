@@ -1,0 +1,47 @@
+{
+    "name": "bootcamp",
+    "settings": {
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "urlPrefix": "http://localhost/bootcamp",
+        "exportPath": "",
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "4870ad13-b720-4bd9-99fa-3f473e2ffa9d": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "39dc1408-4d40-46fe-9ed4-2727000bc966": {
+            "paths": [
+                "metadata/view/MyTabPanel",
+                "app/view/override/MyTabPanel.js",
+                "app/view/MyTabPanel.js"
+            ],
+            "className": "MyTabPanel"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "39dc1408-4d40-46fe-9ed4-2727000bc966"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "4870ad13-b720-4bd9-99fa-3f473e2ffa9d"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

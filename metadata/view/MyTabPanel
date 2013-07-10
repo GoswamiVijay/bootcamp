@@ -1,0 +1,51 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyTabPanel",
+        "designer|initialView": true
+    },
+    "designerId": "39dc1408-4d40-46fe-9ed4-2727000bc966",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 1"
+            },
+            "designerId": "26dfb71d-7e68-4c4c-83ba-72b4af885fec"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 2"
+            },
+            "designerId": "dba1b951-2607-46c6-865c-43443bef6a76"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tab 3"
+            },
+            "designerId": "686660f8-575a-43d7-8585-b62c20885db9"
+        }
+    ]
+}
