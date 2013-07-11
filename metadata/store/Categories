@@ -31,6 +31,9 @@
                         "type": "object"
                     },
                     "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
                     "designerId": "469a2b11-7fe2-4caa-bd32-f777043659da"
                 }
             ]

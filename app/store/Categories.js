@@ -23,7 +23,8 @@ Ext.define('BucketList.store.Categories', {
             type: 'ajax',
             url: 'http://localhost:3000/bc/category',
             reader: {
-                type: 'json'
+                type: 'json',
+                rootProperty: 'data'
             }
         },
         fields: [
