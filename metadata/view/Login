@@ -1,0 +1,204 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "itemId": "login",
+        "designer|userClassName": "Login",
+        "designer|userAlias": "login",
+        "layout": "vbox"
+    },
+    "designerId": "875729d9-86e9-4960-8fc2-9557d51ba510",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Login"
+            },
+            "designerId": "2c74116a-8850-44d3-b3d5-f7842cc6b05e"
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "maxWidth": 500,
+                "width": "90%",
+                "title": "Sign In"
+            },
+            "designerId": "64324f77-219f-4e58-bd73-413d625c937f",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "ID",
+                        "labelWidth": "40%",
+                        "name": "loginid"
+                    },
+                    "designerId": "10dac9fc-d2f9-47a7-816c-23d7aa59f461"
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Password",
+                        "labelWidth": "40%",
+                        "name": "password",
+                        "placeHolder": "last 4 of phone #"
+                    },
+                    "designerId": "ab589122-d929-4228-a612-6d7ef1005293"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "mybutton",
+                "ui": "round",
+                "width": 120,
+                "text": "Log In"
+            },
+            "designerId": "b78c560c-ef45-4dab-a044-1851927a4e95",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMybuttonTap",
+                        "implHandler": [
+                            "BucketList.util.Bootcamp.loginSubmit( button);"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "451d1092-61d8-4876-a36b-9534adf688f7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "margin": "50 0 0 0",
+                "maxWidth": 500,
+                "width": "90%",
+                "instructions": "Screen name is visible to everyone",
+                "title": "Create Account"
+            },
+            "designerId": "f014e101-e075-452e-af18-d4dd43674080",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "ID",
+                        "labelWidth": "40%",
+                        "name": "newloginid"
+                    },
+                    "designerId": "a3489e06-2f16-48b0-a1e6-792d42b41cc0"
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Password",
+                        "labelWidth": "40%",
+                        "name": "newpassword",
+                        "placeHolder": "last 4 of phone #"
+                    },
+                    "designerId": "3f54fe39-db3b-4f47-a547-f25f5bb6088a"
+                },
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": "Screenname",
+                        "labelWidth": "40%",
+                        "name": "newscreenname"
+                    },
+                    "designerId": "7dc29689-cc3d-4185-9990-7d539ba9b161"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "mybutton1",
+                "margin": 20,
+                "ui": "round",
+                "width": 180,
+                "text": "Create Account"
+            },
+            "designerId": "76e7fed3-790f-4d41-82d7-ef017ae01486",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMybutton1Tap",
+                        "implHandler": [
+                            "BucketList.util.Bootcamp.createAccountSubmit( button);"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "dee7b21f-27b0-4ec5-987d-1e5ca9d85d29"
+                }
+            ]
+        }
+    ]
+}

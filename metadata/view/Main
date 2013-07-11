@@ -13,7 +13,7 @@
     "designerId": "39dc1408-4d40-46fe-9ed4-2727000bc966",
     "cn": [
         {
-            "type": "Ext.dataview.List",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -21,76 +21,13 @@
             "codeClass": null,
             "userConfig": {
                 "title": "My Items",
-                "iconCls": "star",
-                "itemId": "mylist1",
-                "store": "MyItems"
+                "iconCls": "star"
             },
-            "designerId": "26dfb71d-7e68-4c4c-83ba-72b4af885fec",
-            "cn": [
-                {
-                    "type": "Ext.TitleBar",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "docked": "top",
-                        "title": "My Items"
-                    },
-                    "designerId": "608ffcb9-ea61-47c3-bc94-29f6a5d090ff"
-                },
-                {
-                    "type": "Ext.XTemplate",
-                    "reference": {
-                        "name": "itemTpl",
-                        "type": "object"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "implHandler": [
-                            "{text}"
-                        ],
-                        "designer|displayName": "itemTpl"
-                    },
-                    "designerId": "7d49b1b9-ea41-4827-93be-8c30e123d087"
-                },
-                {
-                    "type": "basiceventbinding",
-                    "reference": {
-                        "name": "listeners",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "fn": "onMylist1Show",
-                        "implHandler": [
-                            "BucketList.util.Bootcamp.showMyItems();"
-                        ],
-                        "name": "show"
-                    },
-                    "designerId": "af5edd01-006f-455c-9986-a25e9821e2db"
-                },
-                {
-                    "type": "basiceventbinding",
-                    "reference": {
-                        "name": "listeners",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "fn": "onMylist1ItemSwipe",
-                        "implHandler": [
-                            "BucketList.util.Bootcamp.removeBucketItem( record);"
-                        ],
-                        "name": "itemswipe"
-                    },
-                    "designerId": "97b804a8-8674-406b-a85e-bcfad9bdf15a"
-                }
-            ]
+            "designerId": "89ade4e7-3f72-4f42-95af-29caf59d64ab",
+            "masterInstanceId": "a95cba76-8aae-4213-8b05-61a48faca706"
         },
         {
-            "type": "Ext.Container",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -98,75 +35,13 @@
             "codeClass": null,
             "userConfig": {
                 "title": "Categories",
-                "iconCls": "organize",
-                "ui": "",
-                "layout": "fit"
+                "iconCls": "organize"
             },
-            "designerId": "dba1b951-2607-46c6-865c-43443bef6a76",
-            "cn": [
-                {
-                    "type": "Ext.navigation.View",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "designerId": "fd44aa26-17d9-4113-81d6-c148076a7d9d",
-                    "cn": [
-                        {
-                            "type": "Ext.dataview.List",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "title": "Categories",
-                                "itemId": "categorylist",
-                                "ui": "round",
-                                "store": "Categories"
-                            },
-                            "designerId": "5541c538-a5e3-48ce-bb7d-2ccd30252c51",
-                            "cn": [
-                                {
-                                    "type": "Ext.XTemplate",
-                                    "reference": {
-                                        "name": "itemTpl",
-                                        "type": "object"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "implHandler": [
-                                            "{name}"
-                                        ],
-                                        "designer|displayName": "itemTpl"
-                                    },
-                                    "designerId": "8e0c464c-31ac-4b4e-bf88-0a70c0f56e28"
-                                },
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "fn": "onCategorylistItemTap",
-                                        "implHandler": [
-                                            "BucketList.util.Bootcamp.openCategoryItems( dataview, index);"
-                                        ],
-                                        "name": "itemtap"
-                                    },
-                                    "designerId": "3ad3f3e2-ddde-4bbf-8c3c-9a3c2a3c4314"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "designerId": "a3d0dac1-0c04-40c3-9d54-8afa321623f9",
+            "masterInstanceId": "4c4b0211-fc42-4ae6-aa9d-a478c040bb2e"
         },
         {
-            "type": "Ext.form.Panel",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -174,199 +49,10 @@
             "codeClass": null,
             "userConfig": {
                 "title": "Login",
-                "container|align": "center",
-                "iconCls": "user",
-                "layout": "vbox"
+                "iconCls": "user"
             },
-            "designerId": "686660f8-575a-43d7-8585-b62c20885db9",
-            "cn": [
-                {
-                    "type": "Ext.TitleBar",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "docked": "top",
-                        "title": "Login"
-                    },
-                    "designerId": "2c74116a-8850-44d3-b3d5-f7842cc6b05e"
-                },
-                {
-                    "type": "Ext.form.FieldSet",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "maxWidth": 500,
-                        "width": "90%",
-                        "title": "Sign In"
-                    },
-                    "designerId": "64324f77-219f-4e58-bd73-413d625c937f",
-                    "cn": [
-                        {
-                            "type": "Ext.field.Text",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "label": "ID",
-                                "labelWidth": "40%",
-                                "name": "loginid"
-                            },
-                            "designerId": "10dac9fc-d2f9-47a7-816c-23d7aa59f461"
-                        },
-                        {
-                            "type": "Ext.field.Password",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "label": "Password",
-                                "labelWidth": "40%",
-                                "name": "password",
-                                "placeHolder": "last 4 of phone #"
-                            },
-                            "designerId": "ab589122-d929-4228-a612-6d7ef1005293"
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.Button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "itemId": "mybutton",
-                        "ui": "round",
-                        "width": 120,
-                        "text": "Log In"
-                    },
-                    "designerId": "b78c560c-ef45-4dab-a044-1851927a4e95",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "onMybuttonTap",
-                                "implHandler": [
-                                    "BucketList.util.Bootcamp.loginSubmit( button);"
-                                ],
-                                "name": "tap"
-                            },
-                            "designerId": "451d1092-61d8-4876-a36b-9534adf688f7"
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.form.FieldSet",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "margin": "50 0 0 0",
-                        "maxWidth": 500,
-                        "width": "90%",
-                        "instructions": "Screen name is visible to everyone",
-                        "title": "Create Account"
-                    },
-                    "designerId": "f014e101-e075-452e-af18-d4dd43674080",
-                    "cn": [
-                        {
-                            "type": "Ext.field.Text",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "label": "ID",
-                                "labelWidth": "40%",
-                                "name": "newloginid"
-                            },
-                            "designerId": "a3489e06-2f16-48b0-a1e6-792d42b41cc0"
-                        },
-                        {
-                            "type": "Ext.field.Password",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "label": "Password",
-                                "labelWidth": "40%",
-                                "name": "newpassword",
-                                "placeHolder": "last 4 of phone #"
-                            },
-                            "designerId": "3f54fe39-db3b-4f47-a547-f25f5bb6088a"
-                        },
-                        {
-                            "type": "Ext.field.Text",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "label": "Screenname",
-                                "labelWidth": "40%",
-                                "name": "newscreenname"
-                            },
-                            "designerId": "7dc29689-cc3d-4185-9990-7d539ba9b161"
-                        }
-                    ]
-                },
-                {
-                    "type": "Ext.Button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "itemId": "mybutton1",
-                        "margin": 20,
-                        "ui": "round",
-                        "width": 180,
-                        "text": "Create Account"
-                    },
-                    "designerId": "76e7fed3-790f-4d41-82d7-ef017ae01486",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "fn": "onMybutton1Tap",
-                                "implHandler": [
-                                    "BucketList.util.Bootcamp.createAccountSubmit( button);"
-                                ],
-                                "name": "tap"
-                            },
-                            "designerId": "dee7b21f-27b0-4ec5-987d-1e5ca9d85d29"
-                        }
-                    ]
-                }
-            ]
+            "designerId": "9514802b-c21b-45a9-a01b-fa8df338c6d1",
+            "masterInstanceId": "875729d9-86e9-4960-8fc2-9557d51ba510"
         },
         {
             "type": "Ext.tab.Bar",

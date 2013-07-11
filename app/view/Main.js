@@ -17,183 +17,33 @@ Ext.define('BucketList.view.Main', {
     extend: 'Ext.tab.Panel',
     alias: 'widget.main',
 
+    requires: [
+        'BucketList.view.MyItems',
+        'BucketList.view.Categories',
+        'BucketList.view.Login'
+    ],
+
     config: {
         items: [
             {
-                xtype: 'list',
+                xtype: 'myitems',
                 title: 'My Items',
-                iconCls: 'star',
-                itemId: 'mylist1',
-                itemTpl: [
-                    '{text}'
-                ],
-                store: 'MyItems',
-                items: [
-                    {
-                        xtype: 'titlebar',
-                        docked: 'top',
-                        title: 'My Items'
-                    }
-                ]
+                iconCls: 'star'
             },
             {
-                xtype: 'container',
+                xtype: 'categories',
                 title: 'Categories',
-                iconCls: 'organize',
-                ui: '',
-                layout: {
-                    type: 'fit'
-                },
-                items: [
-                    {
-                        xtype: 'navigationview',
-                        items: [
-                            {
-                                xtype: 'list',
-                                title: 'Categories',
-                                itemId: 'categorylist',
-                                ui: 'round',
-                                itemTpl: [
-                                    '{name}'
-                                ],
-                                store: 'Categories'
-                            }
-                        ]
-                    }
-                ]
+                iconCls: 'organize'
             },
             {
-                xtype: 'formpanel',
+                xtype: 'login',
                 title: 'Login',
-                iconCls: 'user',
-                layout: {
-                    align: 'center',
-                    type: 'vbox'
-                },
-                items: [
-                    {
-                        xtype: 'titlebar',
-                        docked: 'top',
-                        title: 'Login'
-                    },
-                    {
-                        xtype: 'fieldset',
-                        maxWidth: 500,
-                        width: '90%',
-                        title: 'Sign In',
-                        items: [
-                            {
-                                xtype: 'textfield',
-                                label: 'ID',
-                                labelWidth: '40%',
-                                name: 'loginid'
-                            },
-                            {
-                                xtype: 'passwordfield',
-                                label: 'Password',
-                                labelWidth: '40%',
-                                name: 'password',
-                                placeHolder: 'last 4 of phone #'
-                            }
-                        ]
-                    },
-                    {
-                        xtype: 'button',
-                        itemId: 'mybutton',
-                        ui: 'round',
-                        width: 120,
-                        text: 'Log In'
-                    },
-                    {
-                        xtype: 'fieldset',
-                        margin: '50 0 0 0',
-                        maxWidth: 500,
-                        width: '90%',
-                        instructions: 'Screen name is visible to everyone',
-                        title: 'Create Account',
-                        items: [
-                            {
-                                xtype: 'textfield',
-                                label: 'ID',
-                                labelWidth: '40%',
-                                name: 'newloginid'
-                            },
-                            {
-                                xtype: 'passwordfield',
-                                label: 'Password',
-                                labelWidth: '40%',
-                                name: 'newpassword',
-                                placeHolder: 'last 4 of phone #'
-                            },
-                            {
-                                xtype: 'textfield',
-                                label: 'Screenname',
-                                labelWidth: '40%',
-                                name: 'newscreenname'
-                            }
-                        ]
-                    },
-                    {
-                        xtype: 'button',
-                        itemId: 'mybutton1',
-                        margin: 20,
-                        ui: 'round',
-                        width: 180,
-                        text: 'Create Account'
-                    }
-                ]
+                iconCls: 'user'
             }
         ],
         tabBar: {
             docked: 'bottom'
-        },
-        listeners: [
-            {
-                fn: 'onMylist1Show',
-                event: 'show',
-                delegate: '#mylist1'
-            },
-            {
-                fn: 'onMylist1ItemSwipe',
-                event: 'itemswipe',
-                delegate: '#mylist1'
-            },
-            {
-                fn: 'onCategorylistItemTap',
-                event: 'itemtap',
-                delegate: '#categorylist'
-            },
-            {
-                fn: 'onMybuttonTap',
-                event: 'tap',
-                delegate: '#mybutton'
-            },
-            {
-                fn: 'onMybutton1Tap',
-                event: 'tap',
-                delegate: '#mybutton1'
-            }
-        ]
-    },
-
-    onMylist1Show: function(component, eOpts) {
-        BucketList.util.Bootcamp.showMyItems();
-    },
-
-    onMylist1ItemSwipe: function(dataview, index, target, record, e, eOpts) {
-        BucketList.util.Bootcamp.removeBucketItem( record);
-    },
-
-    onCategorylistItemTap: function(dataview, index, target, record, e, eOpts) {
-        BucketList.util.Bootcamp.openCategoryItems( dataview, index);
-    },
-
-    onMybuttonTap: function(button, e, eOpts) {
-        BucketList.util.Bootcamp.loginSubmit( button);
-    },
-
-    onMybutton1Tap: function(button, e, eOpts) {
-        BucketList.util.Bootcamp.createAccountSubmit( button);
+        }
     }
 
 });

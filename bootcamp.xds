@@ -68,12 +68,39 @@
                 "app/model/MyItem.js"
             ],
             "className": "MyItem"
+        },
+        "a95cba76-8aae-4213-8b05-61a48faca706": {
+            "paths": [
+                "metadata/view/MyItems",
+                "app/view/override/MyItems.js",
+                "app/view/MyItems.js"
+            ],
+            "className": "MyItems"
+        },
+        "4c4b0211-fc42-4ae6-aa9d-a478c040bb2e": {
+            "paths": [
+                "metadata/view/Categories",
+                "app/view/override/Categories.js",
+                "app/view/Categories.js"
+            ],
+            "className": "Categories"
+        },
+        "875729d9-86e9-4960-8fc2-9557d51ba510": {
+            "paths": [
+                "metadata/view/Login",
+                "app/view/override/Login.js",
+                "app/view/Login.js"
+            ],
+            "className": "Login"
         }
     },
     "viewOrderMap": {
         "view": [
             "39dc1408-4d40-46fe-9ed4-2727000bc966",
-            "761bd34b-e2a0-437c-a1bb-fb0726b3c828"
+            "761bd34b-e2a0-437c-a1bb-fb0726b3c828",
+            "a95cba76-8aae-4213-8b05-61a48faca706",
+            "4c4b0211-fc42-4ae6-aa9d-a478c040bb2e",
+            "875729d9-86e9-4960-8fc2-9557d51ba510"
         ],
         "store": [
             "407cfb6e-9eb3-48e6-adc6-fb51d42f4986",

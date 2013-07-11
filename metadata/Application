@@ -16,7 +16,10 @@
         ],
         "views": [
             "Main",
-            "CategoryItems"
+            "CategoryItems",
+            "MyItems",
+            "Categories",
+            "Login"
         ],
         "requires": [
             "BucketList.util.Bootcamp"

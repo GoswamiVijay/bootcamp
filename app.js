@@ -33,7 +33,10 @@ Ext.application({
     ],
     views: [
         'Main',
-        'CategoryItems'
+        'CategoryItems',
+        'MyItems',
+        'Categories',
+        'Login'
     ],
     name: 'BucketList',
 

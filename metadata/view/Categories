@@ -1,0 +1,77 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "itemId": "categories",
+        "ui": "",
+        "designer|userClassName": "Categories",
+        "designer|userAlias": "categories",
+        "layout": "fit"
+    },
+    "designerId": "4c4b0211-fc42-4ae6-aa9d-a478c040bb2e",
+    "cn": [
+        {
+            "type": "Ext.navigation.View",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "fd44aa26-17d9-4113-81d6-c148076a7d9d",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Categories",
+                        "itemId": "categorylist",
+                        "ui": "round",
+                        "store": "Categories"
+                    },
+                    "designerId": "5541c538-a5e3-48ce-bb7d-2ccd30252c51",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "implHandler": [
+                                    "{name}"
+                                ],
+                                "designer|displayName": "itemTpl"
+                            },
+                            "designerId": "8e0c464c-31ac-4b4e-bf88-0a70c0f56e28"
+                        },
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCategorylistItemTap",
+                                "implHandler": [
+                                    "BucketList.util.Bootcamp.openCategoryItems( dataview, index);"
+                                ],
+                                "name": "itemtap"
+                            },
+                            "designerId": "3ad3f3e2-ddde-4bbf-8c3c-9a3c2a3c4314"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
