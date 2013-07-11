@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "http://localhost:3000/bc/category"
+                "url": "http://api.bc7.us/bc/category"
             },
             "designerId": "f08fcc4d-6578-4fa1-a2dc-8802bcd23259",
             "cn": [
