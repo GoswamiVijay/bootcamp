@@ -35,7 +35,7 @@ Ext.define('BucketList.model.MyItem', {
         ],
         proxy: {
             type: 'ajax',
-            url: 'http://localhost:3000/bc/myitems',
+            url: 'http://api.bc7.us/bc/myitems',
             reader: {
                 type: 'json',
                 rootProperty: 'data'
