@@ -18,6 +18,7 @@ Ext.define('BucketList.view.Main', {
     alias: 'widget.main',
 
     config: {
+        activeItem: 1,
         items: [
             {
                 xtype: 'container',
@@ -27,17 +28,30 @@ Ext.define('BucketList.view.Main', {
             {
                 xtype: 'container',
                 title: 'Categories',
-                iconCls: 'organize'
+                iconCls: 'organize',
+                layout: {
+                    type: 'fit'
+                },
+                items: [
+                    {
+                        xtype: 'list',
+                        itemId: 'categorylist',
+                        itemTpl: [
+                            '{name}'
+                        ],
+                        store: 'Categories'
+                    },
+                    {
+                        xtype: 'titlebar',
+                        docked: 'top',
+                        title: 'Categories'
+                    }
+                ]
             },
             {
                 xtype: 'container',
                 title: 'Login',
                 iconCls: 'user'
-            },
-            {
-                xtype: 'titlebar',
-                docked: 'top',
-                title: 'My Bucket List'
             }
         ],
         tabBar: {

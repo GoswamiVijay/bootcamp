@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "activeItem": 1,
         "designer|userClassName": "Main",
         "designer|userAlias": "main",
         "designer|initialView": true
@@ -34,9 +35,55 @@
             "codeClass": null,
             "userConfig": {
                 "title": "Categories",
-                "iconCls": "organize"
+                "iconCls": "organize",
+                "layout": "fit"
             },
-            "designerId": "dba1b951-2607-46c6-865c-43443bef6a76"
+            "designerId": "dba1b951-2607-46c6-865c-43443bef6a76",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "categorylist",
+                        "store": "Categories"
+                    },
+                    "designerId": "5541c538-a5e3-48ce-bb7d-2ccd30252c51",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "implHandler": [
+                                    "{name}"
+                                ],
+                                "designer|displayName": "itemTpl"
+                            },
+                            "designerId": "8e0c464c-31ac-4b4e-bf88-0a70c0f56e28"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "title": "Categories"
+                    },
+                    "designerId": "a8bd4e36-b1b3-412e-aab8-c9fc23bef0f2"
+                }
+            ]
         },
         {
             "type": "Ext.Container",
@@ -50,19 +97,6 @@
                 "iconCls": "user"
             },
             "designerId": "686660f8-575a-43d7-8585-b62c20885db9"
-        },
-        {
-            "type": "Ext.TitleBar",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "docked": "top",
-                "title": "My Bucket List"
-            },
-            "designerId": "ae4fea52-2f8f-436f-a08e-f704a59f6952"
         },
         {
             "type": "Ext.tab.Bar",
