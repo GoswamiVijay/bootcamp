@@ -79,6 +79,22 @@
                                         "designer|displayName": "itemTpl"
                                     },
                                     "designerId": "8e0c464c-31ac-4b4e-bf88-0a70c0f56e28"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onCategorylistItemTap",
+                                        "implHandler": [
+                                            "BucketList.util.Bootcamp.openCategoryItems( dataview, index);"
+                                        ],
+                                        "name": "itemtap"
+                                    },
+                                    "designerId": "3ad3f3e2-ddde-4bbf-8c3c-9a3c2a3c4314"
                                 }
                             ]
                         }

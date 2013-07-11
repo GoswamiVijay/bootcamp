@@ -59,7 +59,18 @@ Ext.define('BucketList.view.Main', {
         ],
         tabBar: {
             docked: 'bottom'
-        }
+        },
+        listeners: [
+            {
+                fn: 'onCategorylistItemTap',
+                event: 'itemtap',
+                delegate: '#categorylist'
+            }
+        ]
+    },
+
+    onCategorylistItemTap: function(dataview, index, target, record, e, eOpts) {
+        BucketList.util.Bootcamp.openCategoryItems( dataview, index);
     }
 
 });

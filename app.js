@@ -19,6 +19,10 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+
+    requires: [
+        'BucketList.util.Bootcamp'
+    ],
     stores: [
         'Categories',
         'CategoryItems'

@@ -1,0 +1,23 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "stores": [
+            "Categories",
+            "CategoryItems"
+        ],
+        "views": [
+            "Main",
+            "CategoryItems"
+        ],
+        "requires": [
+            "BucketList.util.Bootcamp"
+        ],
+        "name": "BucketList"
+    },
+    "designerId": "application"
+}
