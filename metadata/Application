@@ -19,5 +19,22 @@
         ],
         "name": "BucketList"
     },
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "BucketList.util.Bootcamp.loadSessionToken();"
+                ]
+            },
+            "designerId": "5ea434f5-9ebf-4657-922f-4c4c1938851b"
+        }
+    ]
 }

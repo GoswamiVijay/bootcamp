@@ -88,6 +88,7 @@ Ext.define('BucketList.view.Main', {
                     },
                     {
                         xtype: 'button',
+                        itemId: 'mybutton',
                         ui: 'round',
                         width: 120,
                         text: 'Log In'
@@ -123,6 +124,7 @@ Ext.define('BucketList.view.Main', {
                     },
                     {
                         xtype: 'button',
+                        itemId: 'mybutton1',
                         margin: 20,
                         ui: 'round',
                         width: 180,
@@ -139,12 +141,30 @@ Ext.define('BucketList.view.Main', {
                 fn: 'onCategorylistItemTap',
                 event: 'itemtap',
                 delegate: '#categorylist'
+            },
+            {
+                fn: 'onMybuttonTap',
+                event: 'tap',
+                delegate: '#mybutton'
+            },
+            {
+                fn: 'onMybutton1Tap',
+                event: 'tap',
+                delegate: '#mybutton1'
             }
         ]
     },
 
     onCategorylistItemTap: function(dataview, index, target, record, e, eOpts) {
         BucketList.util.Bootcamp.openCategoryItems( dataview, index);
+    },
+
+    onMybuttonTap: function(button, e, eOpts) {
+        BucketList.util.Bootcamp.loginSubmit( button);
+    },
+
+    onMybutton1Tap: function(button, e, eOpts) {
+        BucketList.util.Bootcamp.createAccountSubmit( button);
     }
 
 });

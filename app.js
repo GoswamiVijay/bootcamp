@@ -34,7 +34,7 @@ Ext.application({
     name: 'BucketList',
 
     launch: function() {
-
+        BucketList.util.Bootcamp.loadSessionToken();
         Ext.create('BucketList.view.Main', {fullscreen: true});
     }
 
