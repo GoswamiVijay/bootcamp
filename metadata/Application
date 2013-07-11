@@ -7,10 +7,15 @@
     "codeClass": null,
     "userConfig": {
         "stores": [
-            "Categories"
+            "Categories",
+            "CategoryItems"
         ],
         "views": [
-            "Main"
+            "Main",
+            "CategoryItems"
+        ],
+        "requires": [
+            "BucketList.util.Bootcamp"
         ],
         "name": "BucketList"
     },
