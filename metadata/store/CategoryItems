@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "http://localhost:3000/bc/bucketcategory"
+                "url": "http://api.bc7.us/bc/bucketcategory"
             },
             "designerId": "5db97ad7-9bc5-4d38-bd80-76a3131deb22",
             "cn": [
