@@ -87,6 +87,12 @@ Ext.define('BucketList.view.Main', {
                         ]
                     },
                     {
+                        xtype: 'button',
+                        ui: 'round',
+                        width: 120,
+                        text: 'Log In'
+                    },
+                    {
                         xtype: 'fieldset',
                         margin: '50 0 0 0',
                         maxWidth: 500,
@@ -114,6 +120,13 @@ Ext.define('BucketList.view.Main', {
                                 name: 'newscreenname'
                             }
                         ]
+                    },
+                    {
+                        xtype: 'button',
+                        margin: 20,
+                        ui: 'round',
+                        width: 180,
+                        text: 'Create Account'
                     }
                 ]
             }

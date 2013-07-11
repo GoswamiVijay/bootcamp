@@ -176,6 +176,20 @@
                     ]
                 },
                 {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "ui": "round",
+                        "width": 120,
+                        "text": "Log In"
+                    },
+                    "designerId": "b78c560c-ef45-4dab-a044-1851927a4e95"
+                },
+                {
                     "type": "Ext.form.FieldSet",
                     "reference": {
                         "name": "items",
@@ -235,6 +249,21 @@
                             "designerId": "7dc29689-cc3d-4185-9990-7d539ba9b161"
                         }
                     ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "margin": 20,
+                        "ui": "round",
+                        "width": 180,
+                        "text": "Create Account"
+                    },
+                    "designerId": "76e7fed3-790f-4d41-82d7-ef017ae01486"
                 }
             ]
         },
