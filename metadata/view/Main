@@ -70,6 +70,22 @@
                         "name": "show"
                     },
                     "designerId": "af5edd01-006f-455c-9986-a25e9821e2db"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMylist1ItemSwipe",
+                        "implHandler": [
+                            "BucketList.util.Bootcamp.removeBucketItem( record);"
+                        ],
+                        "name": "itemswipe"
+                    },
+                    "designerId": "97b804a8-8674-406b-a85e-bcfad9bdf15a"
                 }
             ]
         },

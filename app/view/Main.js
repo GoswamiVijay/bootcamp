@@ -154,6 +154,11 @@ Ext.define('BucketList.view.Main', {
                 delegate: '#mylist1'
             },
             {
+                fn: 'onMylist1ItemSwipe',
+                event: 'itemswipe',
+                delegate: '#mylist1'
+            },
+            {
                 fn: 'onCategorylistItemTap',
                 event: 'itemtap',
                 delegate: '#categorylist'
@@ -173,6 +178,10 @@ Ext.define('BucketList.view.Main', {
 
     onMylist1Show: function(component, eOpts) {
         BucketList.util.Bootcamp.showMyItems();
+    },
+
+    onMylist1ItemSwipe: function(dataview, index, target, record, e, eOpts) {
+        BucketList.util.Bootcamp.removeBucketItem( record);
     },
 
     onCategorylistItemTap: function(dataview, index, target, record, e, eOpts) {
