@@ -21,7 +21,7 @@ Ext.define('BucketList.store.Categories', {
         storeId: 'Categories',
         proxy: {
             type: 'ajax',
-            url: 'http://api.bc7.us/bc/category',
+            url: 'http://localhost:3000/bc/category',
             reader: {
                 type: 'json'
             }
