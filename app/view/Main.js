@@ -52,9 +52,70 @@ Ext.define('BucketList.view.Main', {
                 ]
             },
             {
-                xtype: 'container',
+                xtype: 'formpanel',
                 title: 'Login',
-                iconCls: 'user'
+                iconCls: 'user',
+                layout: {
+                    align: 'center',
+                    type: 'vbox'
+                },
+                items: [
+                    {
+                        xtype: 'titlebar',
+                        docked: 'top',
+                        title: 'Login'
+                    },
+                    {
+                        xtype: 'fieldset',
+                        maxWidth: 500,
+                        width: '90%',
+                        title: 'Sign In',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                label: 'ID',
+                                labelWidth: '40%',
+                                name: 'loginid'
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                label: 'Password',
+                                labelWidth: '40%',
+                                name: 'password',
+                                placeHolder: 'last 4 of phone #'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'fieldset',
+                        margin: '50 0 0 0',
+                        maxWidth: 500,
+                        width: '90%',
+                        instructions: 'Screen name is visible to everyone',
+                        title: 'Create Account',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                label: 'ID',
+                                labelWidth: '40%',
+                                name: 'newloginid'
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                label: 'Password',
+                                labelWidth: '40%',
+                                name: 'newpassword',
+                                placeHolder: 'last 4 of phone #'
+                            },
+                            {
+                                xtype: 'textfield',
+                                label: 'Screenname',
+                                labelWidth: '40%',
+                                name: 'newscreenname'
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         tabBar: {
