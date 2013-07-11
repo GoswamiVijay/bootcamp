@@ -29,6 +29,7 @@ Ext.define('BucketList.view.Main', {
                 xtype: 'container',
                 title: 'Categories',
                 iconCls: 'organize',
+                ui: '',
                 layout: {
                     type: 'fit'
                 },
@@ -36,6 +37,7 @@ Ext.define('BucketList.view.Main', {
                     {
                         xtype: 'list',
                         itemId: 'categorylist',
+                        ui: 'round',
                         itemTpl: [
                             '{name}'
                         ],

@@ -36,6 +36,7 @@
             "userConfig": {
                 "title": "Categories",
                 "iconCls": "organize",
+                "ui": "",
                 "layout": "fit"
             },
             "designerId": "dba1b951-2607-46c6-865c-43443bef6a76",
@@ -49,6 +50,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "itemId": "categorylist",
+                        "ui": "round",
                         "store": "Categories"
                     },
                     "designerId": "5541c538-a5e3-48ce-bb7d-2ccd30252c51",
