@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "activeItem": 1,
         "designer|userClassName": "Main",
         "designer|userAlias": "main",
         "designer|initialView": true
@@ -14,7 +13,7 @@
     "designerId": "39dc1408-4d40-46fe-9ed4-2727000bc966",
     "cn": [
         {
-            "type": "Ext.Container",
+            "type": "Ext.dataview.List",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -22,9 +21,57 @@
             "codeClass": null,
             "userConfig": {
                 "title": "My Items",
-                "iconCls": "star"
+                "iconCls": "star",
+                "itemId": "mylist1",
+                "store": "MyItems"
             },
-            "designerId": "26dfb71d-7e68-4c4c-83ba-72b4af885fec"
+            "designerId": "26dfb71d-7e68-4c4c-83ba-72b4af885fec",
+            "cn": [
+                {
+                    "type": "Ext.TitleBar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "title": "My Items"
+                    },
+                    "designerId": "608ffcb9-ea61-47c3-bc94-29f6a5d090ff"
+                },
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "{text}"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "7d49b1b9-ea41-4827-93be-8c30e123d087"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMylist1Show",
+                        "implHandler": [
+                            "BucketList.util.Bootcamp.showMyItems();"
+                        ],
+                        "name": "show"
+                    },
+                    "designerId": "af5edd01-006f-455c-9986-a25e9821e2db"
+                }
+            ]
         },
         {
             "type": "Ext.Container",

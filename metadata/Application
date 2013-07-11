@@ -6,9 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "MyItem"
+        ],
         "stores": [
             "Categories",
-            "CategoryItems"
+            "CategoryItems",
+            "MyItems"
         ],
         "views": [
             "Main",

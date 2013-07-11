@@ -18,12 +18,23 @@ Ext.define('BucketList.view.Main', {
     alias: 'widget.main',
 
     config: {
-        activeItem: 1,
         items: [
             {
-                xtype: 'container',
+                xtype: 'list',
                 title: 'My Items',
-                iconCls: 'star'
+                iconCls: 'star',
+                itemId: 'mylist1',
+                itemTpl: [
+                    '{text}'
+                ],
+                store: 'MyItems',
+                items: [
+                    {
+                        xtype: 'titlebar',
+                        docked: 'top',
+                        title: 'My Items'
+                    }
+                ]
             },
             {
                 xtype: 'container',
@@ -138,6 +149,11 @@ Ext.define('BucketList.view.Main', {
         },
         listeners: [
             {
+                fn: 'onMylist1Show',
+                event: 'show',
+                delegate: '#mylist1'
+            },
+            {
                 fn: 'onCategorylistItemTap',
                 event: 'itemtap',
                 delegate: '#categorylist'
@@ -153,6 +169,10 @@ Ext.define('BucketList.view.Main', {
                 delegate: '#mybutton1'
             }
         ]
+    },
+
+    onMylist1Show: function(component, eOpts) {
+        BucketList.util.Bootcamp.showMyItems();
     },
 
     onCategorylistItemTap: function(dataview, index, target, record, e, eOpts) {

@@ -52,6 +52,22 @@
                 "app/view/CategoryItems.js"
             ],
             "className": "CategoryItems"
+        },
+        "cbac7b7b-15bf-4f2e-b938-c69404459dbb": {
+            "paths": [
+                "metadata/store/MyItems",
+                "app/store/override/MyItems.js",
+                "app/store/MyItems.js"
+            ],
+            "className": "MyItems"
+        },
+        "14905da8-e486-40bf-b1f7-c11c6e2d4595": {
+            "paths": [
+                "metadata/model/MyItem",
+                "app/model/override/MyItem.js",
+                "app/model/MyItem.js"
+            ],
+            "className": "MyItem"
         }
     },
     "viewOrderMap": {
@@ -61,10 +77,13 @@
         ],
         "store": [
             "407cfb6e-9eb3-48e6-adc6-fb51d42f4986",
-            "288b8ffc-dc52-4f99-9918-85707addd962"
+            "288b8ffc-dc52-4f99-9918-85707addd962",
+            "cbac7b7b-15bf-4f2e-b938-c69404459dbb"
         ],
         "controller": [],
-        "model": [],
+        "model": [
+            "14905da8-e486-40bf-b1f7-c11c6e2d4595"
+        ],
         "resource": [
             "4870ad13-b720-4bd9-99fa-3f473e2ffa9d"
         ],
