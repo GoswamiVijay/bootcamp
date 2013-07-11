@@ -28,13 +28,23 @@
                 "app/view/Main.js"
             ],
             "className": "Main"
+        },
+        "407cfb6e-9eb3-48e6-adc6-fb51d42f4986": {
+            "paths": [
+                "metadata/store/Categories",
+                "app/store/override/Categories.js",
+                "app/store/Categories.js"
+            ],
+            "className": "Categories"
         }
     },
     "viewOrderMap": {
         "view": [
             "39dc1408-4d40-46fe-9ed4-2727000bc966"
         ],
-        "store": [],
+        "store": [
+            "407cfb6e-9eb3-48e6-adc6-fb51d42f4986"
+        ],
         "controller": [],
         "model": [],
         "resource": [

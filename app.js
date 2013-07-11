@@ -19,6 +19,9 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+    stores: [
+        'Categories'
+    ],
     views: [
         'Main'
     ],
