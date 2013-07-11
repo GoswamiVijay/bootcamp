@@ -38,6 +38,22 @@
                 "autoPaging": true
             },
             "designerId": "8d6de633-ef8d-48f6-8fe0-990455cbba1a"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "BucketList.util.Bootcamp.addBucketItem( record);"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "ec3898fb-03d6-4e40-8e04-4c5676e6c758"
         }
     ]
 }

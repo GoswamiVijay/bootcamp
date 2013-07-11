@@ -27,7 +27,17 @@ Ext.define('BucketList.view.CategoryItems', {
                 autoPaging: true,
                 type: 'listpaging'
             }
+        ],
+        listeners: [
+            {
+                fn: 'onListItemTap',
+                event: 'itemtap'
+            }
         ]
+    },
+
+    onListItemTap: function(dataview, index, target, record, e, eOpts) {
+        BucketList.util.Bootcamp.addBucketItem( record);
     }
 
 });

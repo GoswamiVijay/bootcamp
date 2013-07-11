@@ -111,8 +111,8 @@
             "codeClass": null,
             "userConfig": {
                 "title": "Login",
-                "iconCls": "user",
                 "container|align": "center",
+                "iconCls": "user",
                 "layout": "vbox"
             },
             "designerId": "686660f8-575a-43d7-8585-b62c20885db9",
