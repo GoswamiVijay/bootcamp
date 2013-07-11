@@ -24,7 +24,6 @@ Ext.define('BucketList.util.Bootcamp', {
 
 		// get a reference to the "navigationview" xtype which contains this dataview
 		var nv = dataview.up('navigationview');
-		debugger;
 
 		// push the screen with the xtype "categoryitems" into the 
 		//		navigation view
