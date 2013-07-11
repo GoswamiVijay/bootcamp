@@ -7,10 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "stores": [
-            "Categories"
+            "Categories",
+            "CategoryItems"
         ],
         "views": [
-            "Main"
+            "Main",
+            "CategoryItems"
         ],
         "name": "BucketList"
     },
