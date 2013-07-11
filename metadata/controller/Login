@@ -1,0 +1,50 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Login"
+    },
+    "designerId": "19afd07a-a14c-4afb-ba01-ba924c4cdfd8",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "loginButtonTap",
+                "implHandler": [
+                    "BucketList.util.Bootcamp.loginSubmit( button);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#login"
+            },
+            "designerId": "43c9ccb2-2976-4724-8e6a-0590bff63d95"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "createButtonTap",
+                "implHandler": [
+                    "BucketList.util.Bootcamp.createAccountSubmit( button);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button#createaccount"
+            },
+            "designerId": "373d44f9-ebf7-4198-8920-abda53ba1b9d"
+        }
+    ]
+}

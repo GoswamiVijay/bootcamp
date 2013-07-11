@@ -1,0 +1,53 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "MyItems"
+        ],
+        "designer|userClassName": "Main"
+    },
+    "designerId": "112977f4-8567-49ae-aa4a-2d30be996222",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMylist1Show",
+                "implHandler": [
+                    "BucketList.util.Bootcamp.showMyItems();"
+                ],
+                "name": "show",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "list#myitems"
+            },
+            "designerId": "92bf9a2e-219f-45dc-b627-e8a836bf4deb"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMylist1ItemSwipe",
+                "implHandler": [
+                    "BucketList.util.Bootcamp.removeBucketItem( record);"
+                ],
+                "name": "itemswipe",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "list#myitems"
+            },
+            "designerId": "648d6f88-0884-466b-ad3e-70fdf0d033e7"
+        }
+    ]
+}

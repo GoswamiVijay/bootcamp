@@ -34,8 +34,11 @@ Ext.application({
     views: [
         'Main',
         'CategoryItems',
-        'MyItems',
         'Categories',
+        'Login'
+    ],
+    controllers: [
+        'Main',
         'Login'
     ],
     name: 'BucketList',

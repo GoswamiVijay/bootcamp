@@ -52,7 +52,7 @@ Ext.define('BucketList.view.Login', {
             },
             {
                 xtype: 'button',
-                itemId: 'mybutton',
+                itemId: 'login',
                 ui: 'round',
                 width: 120,
                 text: 'Log In'
@@ -88,33 +88,13 @@ Ext.define('BucketList.view.Login', {
             },
             {
                 xtype: 'button',
-                itemId: 'mybutton1',
+                itemId: 'createaccount',
                 margin: 20,
                 ui: 'round',
                 width: 180,
                 text: 'Create Account'
             }
-        ],
-        listeners: [
-            {
-                fn: 'onMybuttonTap',
-                event: 'tap',
-                delegate: '#mybutton'
-            },
-            {
-                fn: 'onMybutton1Tap',
-                event: 'tap',
-                delegate: '#mybutton1'
-            }
         ]
-    },
-
-    onMybuttonTap: function(button, e, eOpts) {
-        BucketList.util.Bootcamp.loginSubmit( button);
-    },
-
-    onMybutton1Tap: function(button, e, eOpts) {
-        BucketList.util.Bootcamp.createAccountSubmit( button);
     }
 
 });

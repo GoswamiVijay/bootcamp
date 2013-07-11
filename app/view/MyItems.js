@@ -29,25 +29,7 @@ Ext.define('BucketList.view.MyItems', {
                 docked: 'top',
                 title: 'My Items'
             }
-        ],
-        listeners: [
-            {
-                fn: 'onMylist1Show',
-                event: 'show'
-            },
-            {
-                fn: 'onMylist1ItemSwipe',
-                event: 'itemswipe'
-            }
         ]
-    },
-
-    onMylist1Show: function(component, eOpts) {
-        BucketList.util.Bootcamp.showMyItems();
-    },
-
-    onMylist1ItemSwipe: function(dataview, index, target, record, e, eOpts) {
-        BucketList.util.Bootcamp.removeBucketItem( record);
     }
 
 });

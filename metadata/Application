@@ -17,12 +17,15 @@
         "views": [
             "Main",
             "CategoryItems",
-            "MyItems",
             "Categories",
             "Login"
         ],
         "requires": [
             "BucketList.util.Bootcamp"
+        ],
+        "controllers": [
+            "Main",
+            "Login"
         ],
         "name": "BucketList"
     },

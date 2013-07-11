@@ -92,6 +92,22 @@
                 "app/view/Login.js"
             ],
             "className": "Login"
+        },
+        "112977f4-8567-49ae-aa4a-2d30be996222": {
+            "paths": [
+                "metadata/controller/Main",
+                "app/controller/override/Main.js",
+                "app/controller/Main.js"
+            ],
+            "className": "Main"
+        },
+        "19afd07a-a14c-4afb-ba01-ba924c4cdfd8": {
+            "paths": [
+                "metadata/controller/Login",
+                "app/controller/override/Login.js",
+                "app/controller/Login.js"
+            ],
+            "className": "Login"
         }
     },
     "viewOrderMap": {
@@ -107,7 +123,10 @@
             "288b8ffc-dc52-4f99-9918-85707addd962",
             "cbac7b7b-15bf-4f2e-b938-c69404459dbb"
         ],
-        "controller": [],
+        "controller": [
+            "112977f4-8567-49ae-aa4a-2d30be996222",
+            "19afd07a-a14c-4afb-ba01-ba924c4cdfd8"
+        ],
         "model": [
             "14905da8-e486-40bf-b1f7-c11c6e2d4595"
         ],

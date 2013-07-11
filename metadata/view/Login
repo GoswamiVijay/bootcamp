@@ -80,30 +80,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "mybutton",
+                "itemId": "login",
                 "ui": "round",
                 "width": 120,
                 "text": "Log In"
             },
-            "designerId": "b78c560c-ef45-4dab-a044-1851927a4e95",
-            "cn": [
-                {
-                    "type": "basiceventbinding",
-                    "reference": {
-                        "name": "listeners",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "fn": "onMybuttonTap",
-                        "implHandler": [
-                            "BucketList.util.Bootcamp.loginSubmit( button);"
-                        ],
-                        "name": "tap"
-                    },
-                    "designerId": "451d1092-61d8-4876-a36b-9534adf688f7"
-                }
-            ]
+            "designerId": "b78c560c-ef45-4dab-a044-1851927a4e95"
         },
         {
             "type": "Ext.form.FieldSet",
@@ -174,31 +156,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "itemId": "mybutton1",
+                "itemId": "createaccount",
                 "margin": 20,
                 "ui": "round",
                 "width": 180,
                 "text": "Create Account"
             },
-            "designerId": "76e7fed3-790f-4d41-82d7-ef017ae01486",
-            "cn": [
-                {
-                    "type": "basiceventbinding",
-                    "reference": {
-                        "name": "listeners",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "fn": "onMybutton1Tap",
-                        "implHandler": [
-                            "BucketList.util.Bootcamp.createAccountSubmit( button);"
-                        ],
-                        "name": "tap"
-                    },
-                    "designerId": "dee7b21f-27b0-4ec5-987d-1e5ca9d85d29"
-                }
-            ]
+            "designerId": "76e7fed3-790f-4d41-82d7-ef017ae01486"
         }
     ]
 }
