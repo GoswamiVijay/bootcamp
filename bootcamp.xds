@@ -44,11 +44,20 @@
                 "app/store/CategoryItems.js"
             ],
             "className": "CategoryItems"
+        },
+        "761bd34b-e2a0-437c-a1bb-fb0726b3c828": {
+            "paths": [
+                "metadata/view/CategoryItems",
+                "app/view/override/CategoryItems.js",
+                "app/view/CategoryItems.js"
+            ],
+            "className": "CategoryItems"
         }
     },
     "viewOrderMap": {
         "view": [
-            "39dc1408-4d40-46fe-9ed4-2727000bc966"
+            "39dc1408-4d40-46fe-9ed4-2727000bc966",
+            "761bd34b-e2a0-437c-a1bb-fb0726b3c828"
         ],
         "store": [
             "407cfb6e-9eb3-48e6-adc6-fb51d42f4986",

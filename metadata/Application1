@@ -11,7 +11,8 @@
             "CategoryItems"
         ],
         "views": [
-            "Main"
+            "Main",
+            "CategoryItems"
         ],
         "name": "BucketList"
     },
