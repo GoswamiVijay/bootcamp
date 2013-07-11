@@ -1,0 +1,19 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "stores": [
+            "Categories",
+            "CategoryItems"
+        ],
+        "views": [
+            "Main"
+        ],
+        "name": "BucketList"
+    },
+    "designerId": "application"
+}

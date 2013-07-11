@@ -36,6 +36,14 @@
                 "app/store/Categories.js"
             ],
             "className": "Categories"
+        },
+        "288b8ffc-dc52-4f99-9918-85707addd962": {
+            "paths": [
+                "metadata/store/CategoryItems",
+                "app/store/override/CategoryItems.js",
+                "app/store/CategoryItems.js"
+            ],
+            "className": "CategoryItems"
         }
     },
     "viewOrderMap": {
@@ -43,7 +51,8 @@
             "39dc1408-4d40-46fe-9ed4-2727000bc966"
         ],
         "store": [
-            "407cfb6e-9eb3-48e6-adc6-fb51d42f4986"
+            "407cfb6e-9eb3-48e6-adc6-fb51d42f4986",
+            "288b8ffc-dc52-4f99-9918-85707addd962"
         ],
         "controller": [],
         "model": [],

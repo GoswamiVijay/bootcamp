@@ -35,18 +35,19 @@ Ext.define('BucketList.view.Main', {
                 },
                 items: [
                     {
-                        xtype: 'list',
-                        itemId: 'categorylist',
-                        ui: 'round',
-                        itemTpl: [
-                            '{name}'
-                        ],
-                        store: 'Categories'
-                    },
-                    {
-                        xtype: 'titlebar',
-                        docked: 'top',
-                        title: 'Categories'
+                        xtype: 'navigationview',
+                        items: [
+                            {
+                                xtype: 'list',
+                                title: 'Categories',
+                                itemId: 'categorylist',
+                                ui: 'round',
+                                itemTpl: [
+                                    '{name}'
+                                ],
+                                store: 'Categories'
+                            }
+                        ]
                     }
                 ]
             },

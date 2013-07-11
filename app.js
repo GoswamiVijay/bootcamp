@@ -20,7 +20,8 @@ Ext.Loader.setConfig({
 
 Ext.application({
     stores: [
-        'Categories'
+        'Categories',
+        'CategoryItems'
     ],
     views: [
         'Main'
