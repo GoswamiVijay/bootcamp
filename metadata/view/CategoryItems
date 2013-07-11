@@ -26,6 +26,18 @@
                 "designer|displayName": "itemTpl"
             },
             "designerId": "09dfb778-85f4-4dea-aaba-d6c0f9ce1a7c"
+        },
+        {
+            "type": "Ext.plugin.ListPaging",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoPaging": true
+            },
+            "designerId": "8d6de633-ef8d-48f6-8fe0-990455cbba1a"
         }
     ]
 }

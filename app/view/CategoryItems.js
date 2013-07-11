@@ -21,6 +21,12 @@ Ext.define('BucketList.view.CategoryItems', {
         store: 'CategoryItems',
         itemTpl: [
             '{text}'
+        ],
+        plugins: [
+            {
+                autoPaging: true,
+                type: 'listpaging'
+            }
         ]
     }
 

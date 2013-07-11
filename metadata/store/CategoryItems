@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "pageSize": 200,
+        "pageSize": 10,
         "storeId": "CategoryItems",
         "designer|userClassName": "CategoryItems"
     },

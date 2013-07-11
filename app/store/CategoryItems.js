@@ -17,7 +17,7 @@ Ext.define('BucketList.store.CategoryItems', {
     extend: 'Ext.data.Store',
 
     config: {
-        pageSize: 200,
+        pageSize: 10,
         storeId: 'CategoryItems',
         proxy: {
             type: 'ajax',
