@@ -29,13 +29,15 @@ Ext.application({
     stores: [
         'Categories',
         'CategoryItems',
-        'MyItems'
+        'MyItems',
+        'CategoryChart'
     ],
     views: [
         'Main',
         'CategoryItems',
         'Categories',
-        'Login'
+        'Login',
+        'CategoryPie'
     ],
     controllers: [
         'Main',

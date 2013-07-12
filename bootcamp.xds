@@ -108,6 +108,22 @@
                 "app/controller/Login.js"
             ],
             "className": "Login"
+        },
+        "c9b22f83-aaf4-432e-8528-faa2ec717ecb": {
+            "paths": [
+                "metadata/store/CategoryChart",
+                "app/store/override/CategoryChart.js",
+                "app/store/CategoryChart.js"
+            ],
+            "className": "CategoryChart"
+        },
+        "f42db982-9977-4b3d-8ab9-d74a31bf3c1e": {
+            "paths": [
+                "metadata/view/CategoryPie",
+                "app/view/override/CategoryPie.js",
+                "app/view/CategoryPie.js"
+            ],
+            "className": "CategoryPie"
         }
     },
     "viewOrderMap": {
@@ -116,12 +132,14 @@
             "761bd34b-e2a0-437c-a1bb-fb0726b3c828",
             "a95cba76-8aae-4213-8b05-61a48faca706",
             "4c4b0211-fc42-4ae6-aa9d-a478c040bb2e",
-            "875729d9-86e9-4960-8fc2-9557d51ba510"
+            "875729d9-86e9-4960-8fc2-9557d51ba510",
+            "f42db982-9977-4b3d-8ab9-d74a31bf3c1e"
         ],
         "store": [
             "407cfb6e-9eb3-48e6-adc6-fb51d42f4986",
             "288b8ffc-dc52-4f99-9918-85707addd962",
-            "cbac7b7b-15bf-4f2e-b938-c69404459dbb"
+            "cbac7b7b-15bf-4f2e-b938-c69404459dbb",
+            "c9b22f83-aaf4-432e-8528-faa2ec717ecb"
         ],
         "controller": [
             "112977f4-8567-49ae-aa4a-2d30be996222",

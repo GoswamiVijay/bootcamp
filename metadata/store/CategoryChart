@@ -1,0 +1,66 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "storeId": "CategoryChart",
+        "designer|userClassName": "CategoryChart"
+    },
+    "designerId": "c9b22f83-aaf4-432e-8528-faa2ec717ecb",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://api.bc7.us/bc/categorycount"
+            },
+            "designerId": "0720db16-af17-4946-b4d3-10225d81f3d0",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "data"
+                    },
+                    "designerId": "15b59481-1d04-438f-9c99-8c780f21f1d2"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "category"
+            },
+            "designerId": "8e79ed1f-a53f-4e04-87ec-30d47928758b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "thecount",
+                "type": "int"
+            },
+            "designerId": "95767ad9-36fb-496e-878b-9904cc4f1e00"
+        }
+    ]
+}

@@ -20,6 +20,7 @@ Ext.define('BucketList.view.Main', {
     requires: [
         'BucketList.view.MyItems',
         'BucketList.view.Categories',
+        'BucketList.view.CategoryPie',
         'BucketList.view.Login'
     ],
 
@@ -36,6 +37,17 @@ Ext.define('BucketList.view.Main', {
                 iconCls: 'organize'
             },
             {
+                xtype: 'carousel',
+                title: 'Charts',
+                iconCls: 'download',
+                itemId: 'mycarousel',
+                items: [
+                    {
+                        xtype: 'categorypie1'
+                    }
+                ]
+            },
+            {
                 xtype: 'login',
                 title: 'Login',
                 iconCls: 'user'
@@ -43,7 +55,18 @@ Ext.define('BucketList.view.Main', {
         ],
         tabBar: {
             docked: 'bottom'
-        }
+        },
+        listeners: [
+            {
+                fn: 'onMycarouselShow',
+                event: 'show',
+                delegate: '#mycarousel'
+            }
+        ]
+    },
+
+    onMycarouselShow: function(component, eOpts) {
+        Ext.getStore('CategoryChart').load();
     }
 
 });

@@ -12,13 +12,15 @@
         "stores": [
             "Categories",
             "CategoryItems",
-            "MyItems"
+            "MyItems",
+            "CategoryChart"
         ],
         "views": [
             "Main",
             "CategoryItems",
             "Categories",
-            "Login"
+            "Login",
+            "CategoryPie"
         ],
         "requires": [
             "BucketList.util.Bootcamp"
