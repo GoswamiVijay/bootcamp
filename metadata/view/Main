@@ -130,6 +130,19 @@
                 "docked": "bottom"
             },
             "designerId": "266f59ca-fb51-48f1-b925-ba5c6361981f"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Polls",
+                "iconCls": "action"
+            },
+            "designerId": "696ff891-acec-454f-b305-a33d3fd209ae"
         }
     ]
 }

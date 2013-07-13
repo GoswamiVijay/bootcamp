@@ -60,6 +60,11 @@ Ext.define('BucketList.view.Main', {
                 xtype: 'login',
                 title: 'Login',
                 iconCls: 'user'
+            },
+            {
+                xtype: 'container',
+                title: 'Polls',
+                iconCls: 'action'
             }
         ],
         tabBar: {
