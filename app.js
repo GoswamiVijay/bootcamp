@@ -37,7 +37,8 @@ Ext.application({
         'CategoryItems',
         'Categories',
         'Login',
-        'CategoryPie'
+        'CategoryPie',
+        'CategoryBar'
     ],
     controllers: [
         'Main',

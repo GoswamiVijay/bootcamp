@@ -21,6 +21,7 @@ Ext.define('BucketList.view.Main', {
         'BucketList.view.MyItems',
         'BucketList.view.Categories',
         'BucketList.view.CategoryPie',
+        'BucketList.view.CategoryBar',
         'BucketList.view.Login'
     ],
 
@@ -44,6 +45,14 @@ Ext.define('BucketList.view.Main', {
                 items: [
                     {
                         xtype: 'categorypie1'
+                    },
+                    {
+                        xtype: 'categorybar'
+                    },
+                    {
+                        xtype: 'titlebar',
+                        docked: 'top',
+                        title: 'Charts'
                     }
                 ]
             },

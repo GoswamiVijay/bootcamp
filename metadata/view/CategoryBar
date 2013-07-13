@@ -1,0 +1,71 @@
+{
+    "type": "Ext.chart.CartesianChart",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CategoryBar",
+        "designer|userAlias": "categorybar",
+        "colors": [
+            "[\"#115fa6\", \"#94ae0a\", \"#a61120\", \"#ff8809\", \"#ffd13e\", \"#a61187\", \"#24ad9a\", \"#7c7474\", \"#a66111\"]"
+        ],
+        "store": "CategoryChart"
+    },
+    "designerId": "ab826259-d8b7-4ee2-a471-2cb426ef9f2a",
+    "isBuiltIn": true,
+    "iconCls": "icon-bar-chart",
+    "autoName": "MyBarChart",
+    "cn": [
+        {
+            "type": "Ext.chart.axis.Category",
+            "reference": {
+                "name": "axes",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fields": [
+                    "category"
+                ],
+                "grid": null
+            },
+            "designerId": "a855be01-7593-4849-a00e-109eca241321"
+        },
+        {
+            "type": "Ext.chart.axis.Numeric",
+            "reference": {
+                "name": "axes",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "grid": [
+                    "{",
+                    "    odd: {",
+                    "        fill: '#e8e8e8'",
+                    "    }",
+                    "}"
+                ],
+                "position": "left"
+            },
+            "designerId": "ddb6dc78-a01b-4672-a479-f04c27afa1a4"
+        },
+        {
+            "type": "Ext.chart.series.Bar",
+            "reference": {
+                "name": "series",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "xField": "category",
+                "yField": [
+                    "thecount"
+                ]
+            },
+            "designerId": "fc213a4d-a71e-42cf-b676-cb46ae860eb1"
+        }
+    ]
+}

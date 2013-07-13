@@ -20,7 +20,8 @@
             "CategoryItems",
             "Categories",
             "Login",
-            "CategoryPie"
+            "CategoryPie",
+            "CategoryBar"
         ],
         "requires": [
             "BucketList.util.Bootcamp"

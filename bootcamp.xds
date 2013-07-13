@@ -124,6 +124,14 @@
                 "app/view/CategoryPie.js"
             ],
             "className": "CategoryPie"
+        },
+        "ab826259-d8b7-4ee2-a471-2cb426ef9f2a": {
+            "paths": [
+                "metadata/view/CategoryBar",
+                "app/view/override/CategoryBar.js",
+                "app/view/CategoryBar.js"
+            ],
+            "className": "CategoryBar"
         }
     },
     "viewOrderMap": {
@@ -133,7 +141,8 @@
             "a95cba76-8aae-4213-8b05-61a48faca706",
             "4c4b0211-fc42-4ae6-aa9d-a478c040bb2e",
             "875729d9-86e9-4960-8fc2-9557d51ba510",
-            "f42db982-9977-4b3d-8ab9-d74a31bf3c1e"
+            "f42db982-9977-4b3d-8ab9-d74a31bf3c1e",
+            "ab826259-d8b7-4ee2-a471-2cb426ef9f2a"
         ],
         "store": [
             "407cfb6e-9eb3-48e6-adc6-fb51d42f4986",
