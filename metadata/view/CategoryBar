@@ -48,6 +48,7 @@
                     "    }",
                     "}"
                 ],
+                "increment": 1,
                 "position": "left"
             },
             "designerId": "ddb6dc78-a01b-4672-a479-f04c27afa1a4"

@@ -44,6 +44,7 @@ Ext.define('BucketList.view.CategoryBar', {
                         fill: '#e8e8e8'
                     }
                 },
+                increment: 1,
                 position: 'left'
             }
         ],
