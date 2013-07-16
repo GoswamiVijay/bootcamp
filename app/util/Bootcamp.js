@@ -94,9 +94,13 @@ Ext.define('BucketList.util.Bootcamp', {
 	showMyItems: function() {
 		Ext.getStore('MyItems').load(function(records, operation, success) {
 			if (!success) {
+				var login = Ext.ComponentQuery.query('#login')[0];
+				if (!login) {
+					login = 2;
+				}
 				Ext.Msg.alert('Load',
 					'Unable to load your bucket items. Please make sure you\'re logged in before loading this page',
-					BucketList.util.Bootcamp.setTabPanelActiveTab(2));
+					BucketList.util.Bootcamp.setTabPanelActiveTab(login));
 			}
 		});
 	},
