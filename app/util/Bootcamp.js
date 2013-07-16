@@ -1,8 +1,7 @@
 Ext.define('BucketList.util.Bootcamp', {
 	singleton: true,
-	// server: 'http://localhost:3000',
-	// server: 'http://apibc.senchabits.com',
 	server: 'http://api.bc7.us',
+	requires: ['Ext.MessageBox'],
 	openCategoryItems: function(dataview, index) {
 		// get the store associated with this dataview
 		var st = dataview.getStore();
